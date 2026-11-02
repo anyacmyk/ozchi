@@ -1233,15 +1233,15 @@ int panel_fixedThresholds[NUM] = {
 
 uint8_t panel_servoMac[]  = { 0xD0, 0xCF, 0x13, 0x52, 0x2D, 0x28 };
 
-Adafruit_NeoPixel panel_strip0(LEDS_PER_STRIP, 13, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel panel_strip1(LEDS_PER_STRIP, 14, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel panel_strip2(LEDS_PER_STRIP, 15, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel panel_strip3(LEDS_PER_STRIP, 16, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel panel_strip4(LEDS_PER_STRIP, 17, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel panel_strip5(LEDS_PER_STRIP, 18, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel panel_strip0(LEDS_PER_STRIP, 14, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel panel_strip1(LEDS_PER_STRIP, 15, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel panel_strip2(LEDS_PER_STRIP, 16, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel panel_strip3(LEDS_PER_STRIP, 17, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel panel_strip4(LEDS_PER_STRIP, 18, NEO_GRB + NEO_KHZ800);
+Adafruit_NeoPixel panel_strip5(LEDS_PER_STRIP, 38, NEO_GRB + NEO_KHZ800);
 
-const int PIEZO_PINS[NUM] = {1, 2, 4, 5, 6, 7};
-const int LED_PINS[NUM]   = {13, 14, 15, 16, 17, 18};
+const int PIEZO_PINS[NUM] = {2, 4, 5, 6, 7, 8};
+const int LED_PINS[NUM]   = {14, 15, 16, 17, 18, 38};   // reference only
 
 int panel_baseline[NUM];
 int panel_thresholds[NUM];
